@@ -1,0 +1,66 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+a {
+  color: #00B7FF;
+}
+
+iframe {
+  width: 100%;
+}
+
+.botui-app-container {
+  width: 100%;
+  height: 100%;
+}
+
+.botui-container {
+  background-color: #FFFFFF;
+}
+.botui-message-content {
+  color: #000000;
+  background-color: #E6E5EA;
+}
+
+.botui-message-content.human {
+  background-color: #007AFF;
+}
+
+.botui-actions-text-input {
+  color: #000000;
+  border-bottom: 1px solid #BBBBBB;
+  margin: 0;
+}
+
+.botui-actions-buttons-button {
+  line-height: 1 !important;
+  background-color: #3498DB;
+}
+
+.botui-message-content-link {
+  color: #3498DB;
+}
+
+.botui-actions-container {
+  padding: 30px 20px;
+}
+
+.botui-messages-container {
+  padding: 10px 15px;
+}
