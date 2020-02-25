@@ -2,23 +2,13 @@ var apiai = require('apiai');
 
 // read the api.ai docs : https://api.ai/docs/
 
-function makeid(length) {
-   var result           = '';
-   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-   var charactersLength = characters.length;
-   for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-   }
-   return result;
-}
-
 // Session ID
 var setSid = function(sessionId) {
   global.sid = sessionId;
 }
 
 // Token
-var app = apiai('your_token');
+var app = apiai('your_token_here');
 
 // Function which returns speech from api.ai
 var getRes = function(query) {
@@ -37,8 +27,5 @@ request.on('response', function(response) {
 request.end();
 return responseFromAPI;
 };
-
-// test the command :
-//getRes('hello').then(function(res){console.log(res)});
 
 module.exports = {setSid,getRes}
